@@ -1,0 +1,59 @@
+<script>
+    let nome "Jorge";
+    const idade = 25;
+    let trabalha = true;
+ 
+
+    console.log("Nome:", nome, "Idade:", idade, "Trabalha?", trabalha);
+
+
+funcition verifica idade(idade) {
+
+ if (idade >= 18) { 
+
+    console.log("Você é maior de idade");
+
+ } else {
+
+    console.log(Você é menor de idade);
+ } 
+
+}
+ verificar idade(20);
+
+<button id="btnSaudar">Clique aqui</button>
+<p id="mensagem"></p>
+
+const botao  = document.querySelector( '#btnSaudar');
+const msg = document.querySelector('#mensagem');
+
+botao.addEventListener('click', () => {
+    msg.textContent = 'Olá! Você Clicou no botão!';
+});
+
+
+constant habilidades = ["HTML, "CSS"]
+habilidades.push("JavaScript");
+console.log(Minhas habilidades:", habilidadess);
+localStorage.setItem('nome', 'Jorge');
+console.log(localStorage.getItem('nome'));
+
+<button id="menos">-</button>
+<Strong id="valor">0</strong>
+<button id="mais">+</button>
+ 
+let n = 0;
+const valor =document.querySelector('#valor');
+document.querySelector('#mais').onclick = () => { valor.textContent = ++n; };
+document.querySelector('#mais').onclick =() => { valor.textContent = --n; };
+
+<p>JavaScript roda no navegador?</p>
+<button class="alt" data-ok="true">Sim</button>
+<button class="alt">Nao</button>
+<p id="resposta">/p>
+    <document class="querySelectorAll"(' .alt').forEach(btn=>{
+        btn.onclick = () => {
+            document.querySelector('#resposta').textContent =
+            btn.dataset.ok ? "Correto!" : "Tente novamente";
+    }
+})
